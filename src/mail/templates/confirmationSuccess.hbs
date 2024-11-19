@@ -1,0 +1,37 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Confirmation Success</title>
+    <style>
+      /* To reset some default styles */ * { margin: 0; padding: 0; box-sizing:
+      border-box; } /* Body styling */ body { font-family: Arial, sans-serif;
+      background-color: #f7fafc; display: flex; justify-content: center;
+      align-items: center; height: 100vh; } /* Main container */ .container {
+      width: 100%; max-width: 500px; background-color: white; padding: 30px;
+      border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); } /*
+      Heading */ .heading { font-size: 2.5rem; font-weight: bold; color:
+      #38a169; /* Green */ text-align: center; margin-bottom: 20px; } /* Message
+      */ .message { font-size: 1.2rem; color: #333; text-align: center;
+      margin-bottom: 30px; } /* Button styling */ .button { display:
+      inline-block; background-color: #3182ce; /* Blue */ color: white; padding:
+      12px 24px; font-size: 1rem; font-weight: 600; text-decoration: none;
+      border-radius: 25px; transition: background-color 0.3s ease; text-align:
+      center; } .button:hover { background-color: #2b6cb0; /* Darker blue */ }
+      .flex-center { display: flex; justify-content: center; }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h1 class='heading'>Email Confirmed!</h1>
+
+      <div class='message'>
+        <p>Thank you, {{name}}! Your email has been successfully confirmed.</p>
+      </div>
+
+      <div class='text-center flex-center'>
+        <a href='http://localhost:8080' class='button'>Go to Login</a>
+      </div>
+    </div>
+  </body>
+</html>

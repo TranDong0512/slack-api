@@ -1,0 +1,54 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Email Confirmation</title>
+    <style>
+      /* Reset some default styles */ body, html { margin: 0; padding: 0;
+      font-family: 'Arial', sans-serif; background-color: #f3f4f6; } .container
+      { width: 100%; padding: 20px; display: flex; justify-content: center;
+      align-items: center; } .email-wrapper { background-color: #ffffff;
+      border-radius: 8px; padding: 40px; box-shadow: 0 8px 16px rgba(0, 0, 0,
+      0.1); max-width: 600px; width: 100%; } .email-header { text-align: center;
+      margin-bottom: 30px; } .email-header h1 { color: #2d3436; font-size: 30px;
+      margin-bottom: 10px; } .email-header p { color: #636e72; font-size: 16px;
+      line-height: 1.5; } .email-body { font-size: 16px; color: #2d3436;
+      margin-bottom: 30px; line-height: 1.6; } .email-body a { display:
+      inline-block; padding: 15px 30px; background-color: #3498db; color:
+      #ffffff; font-size: 18px; text-decoration: none; border-radius: 6px;
+      transition: background-color 0.3s ease; margin-top: 20px; } .email-body
+      a:hover { background-color: #2980b9; } .footer { text-align: center;
+      color: #95a5a6; font-size: 14px; margin-top: 30px; } .footer a { color:
+      #3498db; text-decoration: none; } .footer a:hover { text-decoration:
+      underline; }
+    </style>
+  </head>
+
+  <body>
+    <div class='container'>
+      <div class='email-wrapper'>
+        <div class='email-header'>
+          <h1>Welcome, {{name}}!</h1>
+          <p>Thank you for signing up with us. We're excited to have you
+            onboard!</p>
+        </div>
+
+        <div class='email-body'>
+          <p>To get started, please confirm your email address by clicking the
+            button below:</p>
+          <a href='{{url}}'>Confirm Your Email</a>
+          <p>If you did not sign up for this account, you can ignore this
+            message.</p>
+        </div>
+
+        <div class='footer'>
+          <p>Best regards,</p>
+          <p>Your Company Team</p>
+          <p>
+            <a href='http://localhost:3000'>Visit our website</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
